@@ -5,26 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GG Poker Trust</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="https://kit.fontawesome.com/3f865dbf61.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/3f865dbf61.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function scrollPromocao() {
+        document
+          .querySelector("#section_promocao")
+          .scrollIntoView({ behavior: "smooth" });
+      }
+    </script>
   </head>
   <body>
     <main>
       <nav class="navbar">
         <div>
-          <img src="./Imagens/iconeGGextraLarge.png" />
+          <a
+            href="https://widget.ggpoker.com/client/Signup#!/?lang=pt&tt=1&siteId=GGPBR&btag=trust"
+            target="_blank"
+          >
+            <img src="./Imagens/iconeGGextraLarge.png" />
+          </a>
         </div>
         <div>
-          <button class="navbar-button-green"><i class="fa-solid fa-rocket"></i>Promoções</button>
-          <button class="navbar-button-green"><i class="fa-brands fa-whatsapp"></i>Compre suas fichas</button>
-          <button class="navbar-button-green"><i class="fa-solid fa-download"></i>Faça o download</button>
+          <a onclick="scrollPromocao()"
+            ><i class="fa-solid fa-rocket"></i>Promoções</a
+          >
+          <a
+            target="_blank"
+            href="https://api.whatsapp.com/send?phone=5522988014407"
+            ><i class="fa-brands fa-whatsapp"></i>Compre suas fichas
+          </a>
+          <a
+            href="https://widget.ggpoker.com/client/Signup#!/?lang=pt&tt=1&siteId=GGPBR&btag=trust"
+            target="_blank"
+            ><i class="fa-solid fa-download"></i>Faça o download</a
+          >
         </div>
         <div class="wrapper-hamburguer-menu">
           <input type="checkbox" id="checkbox-hamburguer-menu" />
-          <label for="checkbox-hamburguer-menu"><i class="fa-solid fa-bars"></i></label>
+          <label for="checkbox-hamburguer-menu"
+            ><i class="fa-solid fa-bars"></i
+          ></label>
           <div class="content-hamburguer-menu">
-            <button class="navbar-button-green"><i class="fa-solid fa-rocket"></i>Promoções</button>
-            <button class="navbar-button-green"><i class="fa-brands fa-whatsapp"></i>Compre suas fichas</button>
-            <button class="navbar-button-green"><i class="fa-solid fa-download"></i>Faça o download</button>
+            <a onclick="scrollPromocao()"
+              ><i class="fa-solid fa-rocket"></i>Promoções</a
+            >
+            <a
+              target="_blank"
+              href="https://api.whatsapp.com/send?phone=5522988014407"
+              ><i class="fa-brands fa-whatsapp"></i>Compre suas fichas
+            </a>
+            <a
+              href="https://widget.ggpoker.com/client/Signup#!/?lang=pt&tt=1&siteId=GGPBR&btag=trust"
+              target="_blank"
+              ><i class="fa-solid fa-download"></i>Faça o download</a
+            >
           </div>
         </div>
       </nav>
@@ -32,9 +69,15 @@
         <img src="./Imagens/iconeWSOP.png" />
         <h1>Venha jogar no GG Poker,</h1>
         <h2>O maior site de Poker do Mundo</h2>
-        <button>CADASTRE-SE AGORA</button>
+        <br />
+        <br />
+        <a
+          href="https://widget.ggpoker.com/client/Signup#!/?lang=pt&tt=1&siteId=GGPBR&btag=trust"
+          target="_blank"
+          >CADASTRE-SE AGORA</a
+        >
       </section>
-      <section class="wrapper-section">
+      <section class="wrapper-section" id="section_promocao">
         <div>
           <p>DEPOSITE $20</p>
           <br />
@@ -48,7 +91,11 @@
             DE 100% COM VALOR ATÉ $600
           </p>
           <br />
-          <button>RESGATAR MEU BÔNUS</button>
+          <a
+            href="https://widget.ggpoker.com/client/Signup#!/?lang=pt&tt=1&siteId=GGPBR&btag=trust"
+            target="_blank"
+            >RESGATAR MEU BÔNUS</a
+          >
         </div>
         <div>
           <img src="./Imagens/iconeCaixaPremios.png" />
