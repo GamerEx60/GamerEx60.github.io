@@ -56,6 +56,38 @@
     </script>
   </head>
   <body>
+    <!-- FORMULARIO -->
+
+    <div class="form-popup" id="registerForm">
+      <form
+        action="https://api.sheetmonkey.io/form/e7VuNKv1TYvm2iF5YeU37k"
+        method="post"
+        class="form-container"
+      >
+        <h1>Preencha o formulário de contato</h1>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Seu Email" name="email" required />
+
+        <label for="tel"><b>Celular</b></label>
+        <input
+          type="tel"
+          placeholder="Seu número de celular com DDD"
+          name="phone"
+          pattern="[0-9]{11}"
+          required
+        />
+        <input
+          type="hidden"
+          name="Created"
+          value="x-sheetmonkey-current-date-time"
+        />
+        <button type="submit" value="submit" class="btn cancel">Enviar</button>
+      </form>
+    </div>
+
+    <!-- FORMULARIO -->
+
     <main>
       <nav class="navbar">
         <div>
@@ -140,6 +172,26 @@
         </div>
       </section>
     </main>
+
+    <script>
+      function addHiddenForm() {
+        localStorage.setItem("form", "hidden");
+      }
+
+      function HiddenForm() {
+        let form = document.getElementsByClassName("form-popup");
+        form.style.display = "none";
+      }
+
+      if (localStorage.getItem("form") === "hidden") {
+        HiddenForm();
+      }
+
+      registerForm.addEventListener("submit", () => {
+        addHiddenForm();
+      });
+    </script>
+
     <script
       type="text/javascript"
       src="https://trustfichas.mktzap.com.br/webchat/vf3jujz8bwqplzcsxwdf"
