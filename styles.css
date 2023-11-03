@@ -54,9 +54,6 @@
   opacity: 1;
 }
 
-.hidden {
-  display: none;
-}
 /* FORMULARIO */
 
 * {
@@ -361,6 +358,3 @@ h2 {
     max-width: 270px;
   }
 }
-
-/* Ver se corrigi
- */
