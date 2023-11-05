@@ -2,9 +2,10 @@
 /* The popup form - hidden by default */
 .form-popup {
   display: block;
-  position: fixed;
-  top: 250px;
-  right: 30%;
+  position: absolute;
+  top: 30%;
+  right: 20%;
+  left: 20%;
   border: 5px solid #dc3545;
   z-index: 9;
   color: white;
@@ -12,8 +13,9 @@
 
 /* Add styles to the form container */
 .form-container {
-  max-width: 600px;
+  max-width: 100%;
   padding: 10px;
+
   background-image: url(./Imagens/section-background.jpeg);
 }
 
@@ -356,5 +358,12 @@ h2 {
 @media screen and (min-width: 270px) and (max-width: 499px) {
   .wrapper-section:nth-child(2) > img {
     max-width: 270px;
+  }
+}
+
+@media screen and (min-width: 270px) and (max-width: 1000px) {
+  .form-popup {
+    left: 5%;
+    right: 5%;
   }
 }
